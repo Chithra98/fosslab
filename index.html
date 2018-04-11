@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Student Information System</title>
+		<link rel="Stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="Stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="body_wrapper" style="background:linear-gradient(0deg,#eeeeee,white)">
+			<div class="header">	
+			</div>
+			<div class="login_wrapper">
+				<form method="POST" action="login.php">
+				<input type="text" class="form-control" name="user" placeholder="Username" required>
+				<br>
+				<input type="password" class="form-control" name="pass" placeholder="Password" required>
+				<br>
+				<select class="form-control" name="type" required>
+					<option value="">Login type</option>
+					<option value="s">Student</option>
+					<option value="t">Teacher</option>
+				</select><br>
+				<input type="submit" class="btn btn-danger" style="width:100%" value="Login">
+				<br>
+				</form>
+			<center>
+				<ul>
+					<li class="sub-menu-parent">
+						<a href="#" style="background:none;box-shadow:0 0 0 0;color:white;text-decoration:none">Register</a>
+							<ul class="sub-menu">
+								<li><a href="register.html" style="color:black;text-decoration:none">Student</a></li>
+								<li><a href="teacher_register.html" style="color:black;text-decoration:none">Teacher</a></li>
+                                                                <li><a href="teacher_register.html" style="color:black;text-decoration:none">Parent</a></li>
+       							</ul>
+					</li>
+				</ul>
+			</center>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

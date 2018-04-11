@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Student Information System</title>
+		<link rel="Stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="Stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="body_wrapper">
+			<div class="header">
+			</div>
+			<div class="content">
+				
+				<div class="form_wrapper">
+					<center>
+				<h2>Admission form</h2>
+				<p>Please fill in the form carefully. Remember your passwords.</p><hr>
+			</center>
+				<form method="POST" action="admit.php">
+				<table class="ad_form">
+					<tr>
+						<td>Name of  the student :</td>				
+						<td><input type="text" name="name" class="form-control" required></td>
+					</tr>
+					<tr>
+						<td>Course :</td>				
+						<td>
+							<select name="course" class="form-control" required>
+								<option value="B.Tech">B.Tech</option>
+								<option value="M.Tech">M.Tech</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Branch :</td>				
+						<td>
+							<select name="branch" class="form-control" required>
+								<option value="CSE">Computer Science & Engineering</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Roll no :</td>				
+						<td><input type="number" class="form-control" name="roll_no" required></td>
+					</tr>
+					<tr>
+						<td>Email ID :</td>				
+						<td><input type="email" class="form-control" name="email" required></td>
+					</tr>
+					<tr>
+						<td>Phone number :</td>				
+						<td><input type="phone" class="form-control" name="phone" required></td>
+					</tr>
+					<tr>
+						<td>Register number(This will be your username) :</td>				
+						<td><input type="number" class="form-control" name="reg_no" required></td>
+					</tr>
+					<tr>
+						<td>Current Semester :</td>				
+						<td>
+							<select class="form-control" name="sem" required>
+								<option value="S1S2">S1,S2</option>
+								<option value="S3">S3</option>
+								<option value="S4">S4</option>
+								<option value="S5">S5</option>
+								<option value="S6">S6</option>
+								<option value="S7">S7</option>
+								<option value="S8">S8</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Contact Address :</td>				
+						<td><input type="text" class="form-control" name="address"required></td>
+					</tr>
+					<tr>
+						<td>Password :</td>				
+						<td><input type="password" class="form-control" name="pass1" id="pass1" required></td>
+					</tr>
+					<tr>
+						<td>Confirm Password :</td>				
+						<td><input type="password" class="form-control" name="pass2" id="pass2"required></td>
+					</tr>
+					
+				</table><br>
+				<center><input type="submit" value="Submit" class="btn" id="submit"></center>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
